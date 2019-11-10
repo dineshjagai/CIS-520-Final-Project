@@ -52,16 +52,37 @@
                 _ndvi_nw_ – Pixel northwest of city centroid <br>
 
 2. Related Work
-3. Problem Formulation
 
-4. Methods
+3. Problem Formulation
+Predit the number of degue cases each week in San Juan and Iquitos over a five year period (2008 - 2013) using 
+given environmental variables describing changes in temperature, precipitation, vegetation, and more from 1990.<br>
+
+4. Methods 
+     - Used an imputation method to clean the data  <br>
+     - Use simple regression methods to pedict the number of cases based on our 22 features <br>
+     - Use deep learning with neural networks for a more robust approach. <br>
+
 5. Evaluation
+  - Performance is evaluated according to the mean absolute error. <br>
+      ```math
+     MAE = $$ \dfrac{\sum_{i = 1}^{n}|y_i - \hat{y_i}|}{n} $$
+     (where $$y_i$$ is our training/test labels/values and $$\hat{y_i}$$ is our  predictions) 
+      ```
+  
 6. Project Plan
-   - Week 1
-   - Week 2 
-   - Week 3 
-   - Week 4 
-   - Week 5  
+   - **Week 1**
+          -  Clean the data  <br>
+          - Impute missing data <br>
+          - Visualize the data <br>    
+   - **Week 2**
+          - Work on mimimizing the loss on the training set using differnt regression methods <br>
+    
+   - **Week 3**
+           - Work on mimimixing the loss on the test set using differnt regression methods <br>
+   - **Week 4**
+           - Using a Neural Network (deep learning) <br>
+   - **Week 5**
+            - Work on Presentation <br>
 
 
 
