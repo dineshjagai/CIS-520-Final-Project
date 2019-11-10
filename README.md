@@ -1,10 +1,11 @@
 # CIS520 FINAL PROJECT! 
 ![Dengue Vector](https://github.com/dineshjagai/CIS-520-Final-Project/blob/master/0f3a28954438c90e1935d61f3f2c23e906feb39a.jpg)
 
-### Team-members 
+## Team-members 
   - Dinesh Jagai Email: dinesh97@seas.upenn.edu 
   - Pranav Panganamamula; Email: ppranav@seas.upenn.edu
   - Julian P. Schnitzler; Email: schnitzl@seas.upenn.edu, github: @t0asty
+
 ### Project Title: Predicting disease spread 
 
 
@@ -16,6 +17,7 @@
 
 ##### Objectives
 1. Motivation 
+  
 2. Related Work
 3. Problem Formulation 
 4. Methods
