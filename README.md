@@ -33,7 +33,7 @@
                 _station_avg_temp_c_ – Average temperature <br> 
                 _station_precip_mm_ – Total precipitation <br> 
                 _station_diur_temp_rng_c_ – Diurnal temperature range <br> 
-            -  PERSIANN [satellite precipitation measurements]https://www.ncdc.noaa.gov/cdr) (0.25x0.25 degree scale) <br> 
+            -  PERSIANN [satellite precipitation measurements](https://www.ncdc.noaa.gov/cdr) (0.25x0.25 degree scale) <br> 
              _precipitation_amt_mm_ – Total precipitation <br> 
              - NOAA's [NCEP Climate Forecast System Reanalysis measurement](https://rda.ucar.edu/datasets/ds093.0/#metadata/detailed.html?_do=y)  (0.5x0.5 degree scale)  <br> 
                 _reanalysis_sat_precip_amt_mm_ – Total precipitation <br> 
@@ -55,7 +55,6 @@
 2. **Related Work**
      - https://towardsdatascience.com/multi-label-image-classification-with-neural-network-keras-ddc1ab1afede <br>
      - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=646032<br>
-     - https://towardsdatascience.com/multi-label-image-classification-with-neural-network-keras-ddc1ab1afede<br>
 
 3. **Problem Formulation**
      - Predit the number of degue cases each week in San Juan and Iquitos over a five year period (2008 - 2013) using 
