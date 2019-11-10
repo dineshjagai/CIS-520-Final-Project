@@ -17,7 +17,7 @@
 [PROJECT DESCRIPTION](https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/page/82/)
 
 # Objectives
-1. Motivation (adapted from [DengAI](https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/page/80/)) 
+1. **Motivation** (adapted from [DengAI](https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/page/80/)) 
 - Dengue fever is a mosquito-borne disease that occurs in tropical and sub-tropical parts of the world. In mild cases, symptoms are similar to the flu: fever, rash, and muscle and joint pain. In severe cases, dengue fever can cause severe bleeding, low blood pressure, and even death. 
  - Because it is carried by mosquitoes, the transmission dynamics of dengue are related to climate variables such as temperature and precipitation. Although the relationship to climate is complex, a growing number of scientists argue that climate change is likely to produce distributional shifts that will have significant public health implications worldwide.
  - In recent years dengue fever has been spreading. Historically, the disease has been most prevalent in Southeast Asia and the Pacific islands. These days many of the nearly half billion cases per year are occurring in Latin America. 
@@ -52,22 +52,22 @@
                 _ndvi_ne_ – Pixel northeast of city centroid <br> 
                 _ndvi_nw_ – Pixel northwest of city centroid <br>
 
-2. Related Work
+2. **Related Work**
 
-3. Problem Formulation
+3. **Problem Formulation**
      - Predit the number of degue cases each week in San Juan and Iquitos over a five year period (2008 - 2013) using 
     given environmental variables describing changes in temperature, precipitation, vegetation, and more from 1990.<br>
 
-4. Methods 
+4. **Methods**
      - Used an imputation method to clean the data  <br>
      - Use simple regression methods to pedict the number of cases based on our 22 features <br>
      - Use deep learning with neural networks for a more robust approach. <br>
 
-5. Evaluation
+5. **Evaluation**
   - Performance is evaluated according to the mean absolute error. <br>
     ![MAE](https://github.com/dineshjagai/CIS-520-Final-Project/blob/master/Tex2Img_1573418695.jpg)
   
-6. Project Plan
+6. **Project Plan**
    - **Week 1**
           - Clean the data  <br>
           - Impute the missing data <br>
