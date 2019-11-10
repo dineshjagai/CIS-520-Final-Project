@@ -8,7 +8,6 @@
 ### Weekly Progress
 
 ```markdown
-Syntax highlighted code block
 
 ## Week 1
 1. //TODO 
