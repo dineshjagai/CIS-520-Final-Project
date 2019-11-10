@@ -16,10 +16,41 @@
 [PROJECT DESCRIPTION](https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/page/82/)
 
 ##### Objectives
-1. Motivation 
+1. Motivation (adapted from [DengAI](https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/page/80/)) 
+- Dengue fever is a mosquito-borne disease that occurs in tropical and sub-tropical parts of the world. In mild cases, symptoms are similar to the flu: fever, rash, and muscle and joint pain. In severe cases, dengue fever can cause severe bleeding, low blood pressure, and even death. 
+ - Because it is carried by mosquitoes, the transmission dynamics of dengue are related to climate variables such as temperature and precipitation. Although the relationship to climate is complex, a growing number of scientists argue that climate change is likely to produce distributional shifts that will have significant public health implications worldwide.
+ - In recent years dengue fever has been spreading. Historically, the disease has been most prevalent in Southeast Asia and the Pacific islands. These days many of the nearly half billion cases per year are occurring in Latin America. 
+ - Our goal is to predict the number of dengue cases each week (in each location) based on environmental variables describing changes in temperature, precipitation, vegetation, and more.
+ - **DATASET** 
+    -**Sets of features:** <br> 
+      -_city_ – City abbreviations: sj for San Juan and iq for Iquitos <br> 
+      -_week_start_date_ – Date given in yyyy-mm-dd format <br> 
+      -_station_max_temp_c_ – Maximum temperature <br> 
+      -_station_min_temp_c_ – Minimum temperature <br> 
+      -_station_avg_temp_c_ – Average temperature <br> 
+      -_station_precip_mm_ – Total precipitation <br> 
+      -_station_diur_temp_rng_c_ – Diurnal temperature range <br> 
+      -_precipitation_amt_mm_ – Total precipitation <br> 
+      -_reanalysis_sat_precip_amt_mm_ – Total precipitation <br> 
+      -_reanalysis_dew_point_temp_k_ – Mean dew point temperature <br> 
+      -_reanalysis_air_temp_k_ – Mean air temperature <br> 
+      -_reanalysis_relative_humidity_percent_ – Mean relative humidity <br> 
+      -_reanalysis_specific_humidity_g_per_kg_ – Mean specific humidity <br> 
+      -_reanalysis_precip_amt_kg_per_m2_ – Total precipitation <br> 
+      -_reanalysis_max_air_temp_k_ – Maximum air temperature <br> 
+      -_reanalysis_min_air_temp_k_ – Minimum air temperature <br> 
+      -_reanalysis_avg_temp_k_ – Average air temperature <br> 
+      -_reanalysis_tdtr_k_ – Diurnal temperature range <br> 
+      -_ndvi_se – Pixel_ - southeast of city centroid <br> 
+      -_ndvi_sw – Pixel_ - southwest of city centroid <br> 
+      -_ndvi_ne – Pixel_ - northeast of city centroid <br> 
+
+
+
   
 2. Related Work
-3. Problem Formulation 
+3. Problem Formulation
+
 4. Methods
 5. Evaluation
 6. Project Plan
