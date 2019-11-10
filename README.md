@@ -22,28 +22,35 @@
  - In recent years dengue fever has been spreading. Historically, the disease has been most prevalent in Southeast Asia and the Pacific islands. These days many of the nearly half billion cases per year are occurring in Latin America. 
  - Our goal is to predict the number of dengue cases each week (in each location) based on environmental variables describing changes in temperature, precipitation, vegetation, and more.
  - **DATASET** 
-    -**Sets of features:** <br> 
-      -_city_ – City abbreviations: sj for San Juan and iq for Iquitos <br> 
-      -_week_start_date_ – Date given in yyyy-mm-dd format <br> 
-      -_station_max_temp_c_ – Maximum temperature <br> 
-      -_station_min_temp_c_ – Minimum temperature <br> 
-      -_station_avg_temp_c_ – Average temperature <br> 
-      -_station_precip_mm_ – Total precipitation <br> 
-      -_station_diur_temp_rng_c_ – Diurnal temperature range <br> 
-      -_precipitation_amt_mm_ – Total precipitation <br> 
-      -_reanalysis_sat_precip_amt_mm_ – Total precipitation <br> 
-      -_reanalysis_dew_point_temp_k_ – Mean dew point temperature <br> 
-      -_reanalysis_air_temp_k_ – Mean air temperature <br> 
-      -_reanalysis_relative_humidity_percent_ – Mean relative humidity <br> 
-      -_reanalysis_specific_humidity_g_per_kg_ – Mean specific humidity <br> 
-      -_reanalysis_precip_amt_kg_per_m2_ – Total precipitation <br> 
-      -_reanalysis_max_air_temp_k_ – Maximum air temperature <br> 
-      -_reanalysis_min_air_temp_k_ – Minimum air temperature <br> 
-      -_reanalysis_avg_temp_k_ – Average air temperature <br> 
-      -_reanalysis_tdtr_k_ – Diurnal temperature range <br> 
-      -_ndvi_se – Pixel_ - southeast of city centroid <br> 
-      -_ndvi_sw – Pixel_ - southwest of city centroid <br> 
-      -_ndvi_ne – Pixel_ - northeast of city centroid <br> 
+      - **Sets of features(N = 1456, p = 22)** <br> 
+       
+          - City and date indicators <br> 
+            _city_ – City abbreviations: sj for San Juan and iq for Iquitos <br> 
+            _week_start_date_ – Date given in yyyy-mm-dd format <br> 
+          - NOAA's [GHCN daily climate data weather station measurements] (https://www.ncdc.noaa.gov/oa/climate/ghcn-daily.html) <br>
+            _station_max_temp_c_ – Maximum temperature <br> 
+            _station_min_temp_c_ – Minimum temperature <br> 
+            _station_avg_temp_c_ – Average temperature <br> 
+            _station_precip_mm_ – Total precipitation <br> 
+            _station_diur_temp_rng_c_ – Diurnal temperature range <br> 
+          -  PERSIANN [satellite precipitation measurements(https://www.ncdc.noaa.gov/cdr) (0.25x0.25 degree scale) <br> 
+             _precipitation_amt_mm_ – Total precipitation <br> 
+          - NOAA's [NCEP Climate Forecast System Reanalysis measurement] (https://rda.ucar.edu/datasets/ds093.0/#metadata/detailed.html?_do=y)  (0.5x0.5 degree scale)  <br> 
+            _reanalysis_sat_precip_amt_mm_ – Total precipitation <br> 
+            _reanalysis_dew_point_temp_k_ – Mean dew point temperature <br> 
+            _reanalysis_air_temp_k_ – Mean air temperature <br> 
+            _reanalysis_relative_humidity_percent_ – Mean relative humidity <br> 
+            _reanalysis_specific_humidity_g_per_kg_ – Mean specific humidity <br> 
+            _reanalysis_precip_amt_kg_per_m2_ – Total precipitation <br> 
+            _reanalysis_max_air_temp_k_ – Maximum air temperature <br> 
+            _reanalysis_min_air_temp_k_ – Minimum air temperature <br> 
+            _reanalysis_avg_temp_k_ – Average air temperature <br> 
+            _reanalysis_tdtr_k_ – Diurnal temperature range <br> 
+          - Satellite vegetation - Normalized difference vegetation index (NDVI) - NOAA's [CDR Normalized Difference Vegetation Index] (https://www.ncdc.noaa.gov/cdr) (0.5x0.5 degree scale) measurements <br>   
+            _ndvi_se_ – Pixel southeast of city centroid <br> 
+            _ndvi_sw_ – Pixel southwest of city centroid <br> 
+            _ndvi_ne_ – Pixel northeast of city centroid <br> 
+            _ndvi_nw_ – Pixel northwest of city centroid <br>
 
 
 
