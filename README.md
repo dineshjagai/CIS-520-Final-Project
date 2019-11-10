@@ -2,11 +2,11 @@
 ![Dengue Vector](https://github.com/dineshjagai/CIS-520-Final-Project/blob/master/0f3a28954438c90e1935d61f3f2c23e906feb39a.jpg)
 
 # Team-members 
-  - Dinesh Jagai Email: dinesh97@seas.upenn.edu 
-  - Pranav Panganamamula; Email: ppranav@seas.upenn.edu
-  - Julian P. Schnitzler; Email: schnitzl@seas.upenn.edu, github: @t0asty
+  - Dinesh Jagai <dinesh97@seas.upenn.edu>
+  - Pranav Panganamamula <ppranav@seas.upenn.edu>
+  - Julian P. Schnitzler <schnitzl@seas.upenn.edu>
 
-# Project Title: Predicting disease spread 
+# Project Title: Predicting the spread of dengue virus in San Juan and Iquitos over a five year period 
 
 
 
@@ -54,8 +54,8 @@
 2. Related Work
 
 3. Problem Formulation
-Predit the number of degue cases each week in San Juan and Iquitos over a five year period (2008 - 2013) using 
-given environmental variables describing changes in temperature, precipitation, vegetation, and more from 1990.<br>
+     - Predit the number of degue cases each week in San Juan and Iquitos over a five year period (2008 - 2013) using 
+    given environmental variables describing changes in temperature, precipitation, vegetation, and more from 1990.<br>
 
 4. Methods 
      - Used an imputation method to clean the data  <br>
@@ -64,23 +64,20 @@ given environmental variables describing changes in temperature, precipitation, 
 
 5. Evaluation
   - Performance is evaluated according to the mean absolute error. <br>
-      ```math
-     MAE = $$ \dfrac{\sum_{i = 1}^{n}|y_i - \hat{y_i}|}{n} $$
-     (where $$y_i$$ is our training/test labels/values and $$\hat{y_i}$$ is our  predictions) 
-      ```
+    ![MAE](https://github.com/dineshjagai/CIS-520-Final-Project/blob/master/Tex2Img_1573418695.jpg)
   
 6. Project Plan
    - **Week 1**
-          -  Clean the data  <br>
-          - Impute missing data <br>
+          - Clean the data  <br>
+          - Impute the missing data <br>
           - Visualize the data <br>    
    - **Week 2**
-          - Work on mimimizing the loss on the training set using differnt regression methods <br>
+          - Work on mimimizing the loss on the training set using different regression methods <br>
     
    - **Week 3**
-           - Work on mimimixing the loss on the test set using differnt regression methods <br>
+           - Work on minimizing the loss on the test set using differnt regression methods <br>
    - **Week 4**
-           - Using a Neural Network (deep learning) <br>
+           - Use a Neural Network (deep learning) <br>
    - **Week 5**
             - Work on Presentation <br>
 
