@@ -1,5 +1,5 @@
 # CIS520 FINAL PROJECT! 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+![Dengue Vector](https://github.com/dineshjagai/CIS-520-Final-Project/blob/master/0f3a28954438c90e1935d61f3f2c23e906feb39a.jpg)
 
 ### Team-members 
   - Dinesh Jagai Email: dinesh97@seas.upenn.edu 
