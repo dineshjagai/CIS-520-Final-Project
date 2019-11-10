@@ -55,6 +55,7 @@
 2. **Related Work**
      - https://towardsdatascience.com/multi-label-image-classification-with-neural-network-keras-ddc1ab1afede <br>
      - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=646032<br>
+     - https://towardsdatascience.com/multi-label-image-classification-with-neural-network-keras-ddc1ab1afede<br>
 
 3. **Problem Formulation**
      - Predit the number of degue cases each week in San Juan and Iquitos over a five year period (2008 - 2013) using 
