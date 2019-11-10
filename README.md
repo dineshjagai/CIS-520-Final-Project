@@ -6,7 +6,8 @@
   - Pranav Panganamamula <ppranav@seas.upenn.edu>
   - Julian P. Schnitzler <schnitzl@seas.upenn.edu>
 
-# Project Title: Predicting the spread of dengue virus in San Juan and Iquitos over a five year period 
+# Project Title
+> Predicting the spread of dengue virus in San Juan and Iquitos over a five year period 
 
 
 
