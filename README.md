@@ -71,18 +71,18 @@
     ![MAE](https://github.com/dineshjagai/CIS-520-Final-Project/blob/master/Tex2Img_1573418695.jpg)
   
 6. **Project Plan**
-   - **Week 1 11/4**
+   - **Week 1 11/4** <br>
           - Clean the data  <br>
           - Impute the missing data <br>
           - Visualize the data <br>    
-   - **Week 2 11/11**
+   - **Week 2 11/11** <br>
           - Work on mimimizing the loss on the training set using different regression methods <br>
     
-   - **Week 3 11/18**
+   - **Week 3 11/18** <br>
            - Work on minimizing the loss on the test set using differnt regression methods <br>
-   - **Week 4 11/25**
+   - **Week 4 11/25** <br>
            - Use a Neural Network (deep learning) <br>
-   - **Week 5 12/2**
+   - **Week 5 12/2** <br>
             - Work on Presentation <br>
 
 
