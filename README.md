@@ -53,9 +53,16 @@
                 _ndvi_nw_ – Pixel northwest of city centroid <br>
 
 2. **Related Work**
-     - https://towardsdatascience.com/multi-label-image-classification-with-neural-network-keras-ddc1ab1afede <br>
-     - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=646032<br> (I think that one was for the Caribbean thing)
-     - https://ieeexplore.ieee.org/abstract/document/7912315
+     - 01)https://ieeexplore.ieee.org/abstract/document/7912315 (This papers discusses disease Prediction by Machine Learning Over Big Data From Healthcare Communities using a CNN-based multimodal disease risk prediction )   <br>
+     - 02)https://bmcinfectdis.biomedcentral.com/articles/10.1186/s12879-019-3874-x (This papers discusses how to predict dengue outbreaks based on disease surveillance, meteorological and socio-economic data - it uses a Quasi-Poisson regression in which the variance of count data (dengue counts) is assumed to be a linear function of the mean for to predict the dengue cases)  <br>
+     - 03) https://towardsdatascience.com/dengue-fever-and-how-to-predict-it-a32eab1dbb18 (An articles highlighting how to predict dengue using different regression methods (fairly similar to what we're trying to do, but ours has more parameters and data. Also we plan to use deep learning in addition to regression)  <br>
+     - 04) https://pdfs.semanticscholar.org/1c31/0e22fe1a0418aaa25fcc629736b5a46655f8.pdf (This paper looks at Dengue Possibility Forecasting Model using Machine Learning Algorithms. Specifically, they use a Gradient Boosting Regression ensemble method to predict the possibility of a dengue outbreak taking place)  <br>
+     - 05) https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0005973 (Thus paper examines predicting the number of dengue cases in China using several ML techniques including the support vector regression (SVR) algorithm, step-down linear regression model, gradient boosted regression tree algorithm (GBM), negative binomial regression model (NBM), least absolute shrinkage and selection operator (LASSO) linear regression model and generalized additive model (GAM), were used as candidate models to predict dengue incidence) They found that the (support vector regression) SVR model achieved a superior performance in comparison with other forecasting techniques assessed in this study.  <br>
+     - 06) http://www.imedpub.com/conference-abstracts-files/deep-learning-applications-for-predicting-dengue-fever.pdf(This paper looks at using deep learnging to predict the number of dengue cases in Taiwan.  <br>
+     - 07) https://www.researchgate.net/profile/Yuhanis_Yusof/publication/272912479_Dengue_Outbreak_Prediction_A_Least_Squares_Support_Vector_Machines_Approach/links/5691be4f08ae0f920dcb9058/Dengue-Outbreak-Prediction-A-Least-Squares-Support-Vector-Machines-Approach.pdf(Thus paper develops a dengue prediction model using  Long Short Term Memory neural networks)  <br>
+     - 08) https://www.biorxiv.org/content/biorxiv/early/2019/09/06/760702.full.pdf(Thus paper uses Least Squares Support Vector Machines (LS-SVM) in predicting future dengue outbreak in Malaysia) <br>
+     
+     
 
 3. **Problem Formulation**
      - Predit the number of degue cases each week in San Juan and Iquitos over a five year period (2008 - 2013) using 
@@ -79,7 +86,7 @@
           - Work on mimimizing the loss on the training set using different regression methods <br>
     
    - **Week 3 11/18** <br>
-           - Work on minimizing the loss on the test set using differnt regression methods <br>
+           - Work on minimizing the loss on the test set using different regression methods <br>
    - **Week 4 11/25** <br>
            - Use a Neural Network (deep learning) <br>
    - **Week 5 12/2** <br>
