@@ -87,6 +87,8 @@
     
    - **Week 3 11/18** <br>
            - Work on minimizing the loss on the test set using different regression methods <br>
+           - Use different cross-validation methods to select any needed parameters <br>
+           - Research different deep learning methods <br>
    - **Week 4 11/25** <br>
            - Use a Neural Network (deep learning) <br>
    - **Week 5 12/2** <br>
