@@ -1,5 +1,5 @@
 # CIS520 FINAL PROJECT! 
-![Dengue Vector](https://github.com/dineshjagai/CIS-520-Final-Project/blob/master/0f3a28954438c90e1935d61f3f2c23e906feb39a.jpg)
+![Dengue Vector](https://github.com/dineshjagai/CIS-520-Final-Project/blob/master/DengueVector.jpg)
 
 # Team-members 
   - Dinesh Jagai <dinesh97@seas.upenn.edu>
@@ -75,7 +75,7 @@
 
 5. **Evaluation**
   - Performance is evaluated according to the mean absolute error. <br>
-    ![MAE](https://github.com/dineshjagai/CIS-520-Final-Project/blob/master/Tex2Img_1573418695.jpg)
+    ![MAE](https://github.com/dineshjagai/CIS-520-Final-Project/blob/master/MAE.jpg)
   
 6. **Project Plan**
    - **Week 1 11/4** <br>
