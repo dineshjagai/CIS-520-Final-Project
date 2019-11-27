@@ -1,0 +1,14 @@
+problems:
+1) what is the distribution of the cases (is it a Gaussian) ? 
+
+2) Are you overfitting because you have the number last week and next week. 
+
+3) Train on the first half vs. the second half! 
+
+4) Assume there are IID (then use typical ML methods);can also not assume this then predict the next case using the previous case.  
+
+5) Use Mean Squared Error (but the website uses MAE) {i.e. make sure the methods we use optimize MAE not MSE, look at Sklearn's documentation) 
+
+6) Use Elastic net, univariate multivariate test, streamwise stepwise to detect a number of features 
+
+7) Convert everything to the same scale (everything to Kelvin) 
