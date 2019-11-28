@@ -1,0 +1,152 @@
+\documentclass[english]{article}
+\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+
+\begin{document}
+
+%*********** Use this for project proposal ************
+%\emph{\footnotesize{CIS 520 Fall 2019, Project Proposal}}
+
+%*********** Use this for project checkpoint ************
+\emph{\footnotesize{CIS 520 Fall 2019, Project Checkpoint}}
+
+%*********** Use this for project report ************
+%\emph{\footnotesize{CIS 520 Fall 2019, Project Report}}
+
+\vspace{12pt}
+
+
+%*********** Use this header for project checkpoint, feel free to modify for final report ************
+
+%Fill in your project title
+\textbf{\Large{Predicting the spread of dengue virus in San Juan and Iquitos over a five year period}}
+
+\vspace{1cm}
+
+\textbf{Team Members:}
+
+%Fill in your team details; remove any lines that are not needed
+\begin{itemize}
+ \item Dinesh Jagai; Email: \texttt{dinesh97@seas.upenn.edu}
+ \item Pranav Panganamamula; Email: \texttt{ppranav@seas.upenn.edu}
+ \item Julian P. Schnitzler; Email: \texttt{schnitzl@seas.upenn.edu} 
+\end{itemize}
+
+\hline
+
+%*********** Use this to include abstract in project report (comment out in project proposal) ************
+
+\begin{abstract}
+TBD
+\end{abstract}
+
+%*********** Recommended section structure for project report and checkpoint below (comment out in project proposal) ************
+
+\section{Motivation}
+
+Dengue fever is a mosquito-borne disease that occurs in tropical and sub-tropical parts of the world. In mild cases, symptoms are similar to the flu: fever, rash, and muscle and joint pain. In severe cases, dengue fever can cause severe bleeding, low blood pressure, and even death.\\
+Because it is carried by mosquitoes, the transmission dynamics of dengue are related to climate variables such as temperature and precipitation. Although the relationship to climate is complex, a growing number of scientists argue that climate change is likely to produce distributional shifts that will have significant public health implications worldwide.\\
+In recent years dengue fever has been spreading. Historically, the disease has been most prevalent in Southeast Asia and the Pacific islands. These days many of the nearly half billion cases per year are occurring in Latin America.\\
+Our goal is to predict the number of dengue cases each week (in each location) based on environmental variables describing changes in temperature, precipitation, vegetation, and more.\\
+Prediciting the number of cases in these cities can be very helpful to support planning of the distribution of pharmaceuticals and other actions to cure people or prevent people from getting ill.\\
+Machine Learning will help us to find the relevant features and generate responsible predictions.
+
+\section{Related Work}
+
+%\textit{Tip: we suggest using bibtex for easy citation management. For example, here are citations to Bishop's book \cite{Bishop06} and the UCI machine learning repository \cite{DuaKa17}.}
+
+There exist some articles on the topic of disease prediction, especially as well for the Dengue Fever.
+\cite{7912315} discusses disease Prediction by Machine Learning Over Big Data From Healthcare Communities using a CNN-based multimodal disease risk prediction. Another article on this topic is \cite{jain2019prediction}. This paper discusses how to predict dengue outbreaks based on disease surveillance, meteorological and socio-economic data - it uses a Quasi-Poisson regression in which the variance of count data (dengue counts) is assumed to be a linear function of the mean for to predict the dengue cases.
+An article highlighting how to predict dengue using different regression methods is \cite{connor_2018} (It is fairly similar to what we're trying to do, but ours has more parameters and data. Also, we plan to use deep learning in addition to regression. 
+The authors of \cite{muhilthini2018dengue} looked at developing a Dengue Possibility Forecasting Model using Machine Learning Algorithms. Specifically, they use a Gradient Boosting Regression ensemble method to predict the possibility of a dengue outbreak taking place.
+\cite{10.1371/journal.pntd.0005973} examines predicting the number of dengue cases in China using several ML techniques including the support vector regression (SVR) algorithm, step-down linear regression model, gradient boosted regression tree algorithm (GBM), negative binomial regression model (NBM), least absolute shrinkage and selection operator (LASSO) linear regression model and generalized additive model (GAM), were used as candidate models to predict dengue incidence) They found that the (support vector regression) SVR model achieved a superior performance in comparison with other forecasting techniques assessed in this study.
+Another approach is to use deep learning to predict the number of dengue cases in Taiwan, as it was done in \cite{anno2018environmental}.
+Also, it would be possible to use LSTM neural nets. This was done by the authors of \cite{yusof2011}.
+Finally, \cite{Xu760702} uses Least Squares Support Vector Machines (LS-SVM) in predicting future dengue outbreaks in Malaysia.
+
+\section{Data Set}
+
+The data set is provided by drivendata.org (https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/)\\
+
+We have 1456 samples in our data set, and about 22 features. For testing, we can either split the data or test our model on a hidden test set on the website.\\
+
+The features are as follows:\\
+
+\textbf{City and date indicators}
+\begin{itemize}
+    \item[-] \textit{city} --  City abbreviations: sj for San Juan and iq for Iquitos
+    \item[-] \textit{week\_start\_date} -- Date given in yyyy-mm-dd format
+\end{itemize}
+\textbf{NOAA's GHCN daily climate data weather station measurements}
+\begin{itemize}
+    \item[-] \textit{station\_max\_temp\_c} -- Maximum temperature
+    \item[-] \textit{station\_min\_temp\_c} -- Minimum temperature
+    \item[-] \textit{station\_avg\_temp\_c} -- Average temperature
+    \item[-] \textit{station\_precip\_mm} -- Total precipitation
+    \item[-] \textit{station\_diur\_temp\_rng\_c} -- Diurnal temperature range
+\end{itemize}
+\textbf{PERSIANN satellite precipitation measurements} (0.25x0.25 degree scale)
+\begin{itemize}
+    \item[-] \textit{precipitation\_amt\_mm} -- Total precipitation
+\end{itemize}
+\textbf{NOAA's NCEP Climate Forecast System Reanalysis measurement} (0.5x0.5 degree scale)
+\begin{itemize}
+    \item[-] \textit{reanalysis\_sat\_precip\_amt\_mm} -- Total precipitation
+    \item[-] \textit{reanalysis\_dew\_point\_temp\_k} -- Mean dew point temperature
+    \item[-] \textit{reanalysis\_air\_temp\_k} -- Mean air temperature
+    \item[-] \textit{reanalysis\_relative\_humidity\_percent} -- Mean relative humidity
+    \item[-] \textit{reanalysis\_specific\_humidity\_g\_per\_kg} -- Mean specific humidity
+    \item[-] \textit{reanalysis\_precip\_amt\_kg\_per\_m2} -- Total precipitation
+    \item[-] \textit{reanalysis\_max\_air\_temp\_k} -- Maximum air temperature
+    \item[-] \textit{reanalysis\_min\_air\_temp\_k} -- Minimum air temperature
+    \item[-] \textit{reanalysis\_avg\_temp\_k} -- Average air temperature
+    \item[-] \textit{reanalysis\_tdtr\_k} -- Diurnal temperature range
+\end{itemize}
+\textbf{Satellite vegetation} - Normalized difference vegetation index (NDVI) - NOAA's CDR Normalized Difference Vegetation Index (0.5x0.5 degree scale) measurements
+\begin{itemize}
+    \item[-] \textit{ndvi\_se} -- Pixel southeast of city centroid
+    \item[-] \textit{ndvi\_sw} -- Pixel southwest of city centroid
+    \item[-] \textit{ndvi\_ne} -- Pixel northeast of city centroid
+    \item[-] \textit{ndvi\_nw} -- Pixel northwest of city centroid
+\end{itemize}
+
+For prepocessing so far, we did a Mean Imputation for missing values. Moreover, we did PCA and will try to reduce the number of features by that. 
+
+\section{Problem Formulation}
+
+Our goal is to predict the number of dengue cases each week in San Juan and Iquitos over a five year period (2008 - 2013) using given environmental variables describing changes in temperature, precipitation, vegetation, and more from 1990-2008.
+
+
+\section{Methods}
+
+We want to test multiple approaches in general.
+We first want to use simple regression methods to predict the number of cases based on our 22 features. \\
+Compared to that, we will use deep learning with neural networks for a more robust approach, but maybe with a lot of overfitting as the number of training approaches is rather small.\\
+Finally, we will also try approaches like random forests or gradient tree boosting, which might do well on our dataset with only few training samples and features.
+
+\section{Experiments and Results}
+
+Performance is evaluated according to the mean absolute error.
+
+$$MAE = \frac{\sum_{i=1}^n |y_i - \hat{y}_i|}{n} $$
+
+where $y_i$ is our training/test label and $\hat{y}_i$ our prediction. \\
+
+We might add graphs/performances of our approaches here, together with some explanations and idea we got from that.
+
+\section{Conclusion and Discussion}
+
+TBD
+
+\section*{Acknowledgments}
+
+Thank you.
+
+\newpage
+%============================= BIBLIOGRAPHY ===============================
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
