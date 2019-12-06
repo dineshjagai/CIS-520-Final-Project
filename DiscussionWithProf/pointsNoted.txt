@@ -1,9 +1,9 @@
 problems:
 1) what is the distribution of the cases (is it a Gaussian) ? 
 
-2) Are you overfitting because you have the number last week and next week. 
+2) Are you overfitting because you have the number last week and next week. Watch out to actually predict future from past
 
-3) Train on the first half vs. the second half! 
+3) Train on the first half vs. the second half! (or pick e.g. the last 200 values as test set)
 
 4) Assume there are IID (then use typical ML methods);can also not assume this then predict the next case using the previous case.  
 
@@ -12,3 +12,7 @@ problems:
 6) Use Elastic net, univariate multivariate test, streamwise stepwise to detect a number of features 
 
 7) Convert everything to the same scale (everything to Kelvin) 
+
+8) Proposed methods: Random Forests/Gradient tree boosting
+
+9) Visualization: Try to point out which features might be important
